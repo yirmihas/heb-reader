@@ -1,0 +1,54 @@
+.stimulus-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* ── Media (image or emoji) ──────────────────────────────────── */
+.stimulus-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stimulus-emoji {
+  font-size: 5rem;
+  line-height: 1;
+  animation: pop-in 0.3s ease;
+}
+
+.stimulus-img {
+  max-width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: var(--radius-card);
+  animation: pop-in 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+/* ── English label ───────────────────────────────────────────── */
+.stimulus-label {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: capitalize;
+  letter-spacing: 0.01em;
+}
+
+/* ── Fun fact ────────────────────────────────────────────────── */
+.stimulus-fact {
+  font-size: 0.83rem;
+  line-height: 1.55;
+  color: #4A4060;
+  background: #EDE7FF;
+  border-radius: 12px;
+  padding: 9px 13px;
+  width: 100%;
+  margin: 0;
+}
+
+.stimulus-fact-icon {
+  font-style: normal;
+}

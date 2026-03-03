@@ -1,0 +1,125 @@
+{
+  "version": "1.0",
+  "sentences": [
+    {
+      "id": "dog-eats-cake",
+      "words": [
+        { "hebrew": "הַכֶּלֶב", "hebrewNoNikud": "הכלב", "english": "the dog" },
+        { "hebrew": "אוֹכֵל",   "hebrewNoNikud": "אוכל",  "english": "eats" },
+        { "hebrew": "עוּגָה",   "hebrewNoNikud": "עוגה",  "english": "cake" }
+      ],
+      "translation": "The dog eats cake",
+      "emoji": "🐶🎂"
+    },
+    {
+      "id": "cat-drinks-milk",
+      "words": [
+        { "hebrew": "הַחָתוּל", "hebrewNoNikud": "החתול", "english": "the cat" },
+        { "hebrew": "שׁוֹתֶה",  "hebrewNoNikud": "שותה",  "english": "drinks" },
+        { "hebrew": "חָלָב",   "hebrewNoNikud": "חלב",   "english": "milk" }
+      ],
+      "translation": "The cat drinks milk",
+      "emoji": "🐱🥛"
+    },
+    {
+      "id": "elephant-eats-banana",
+      "words": [
+        { "hebrew": "הַפִּיל",   "hebrewNoNikud": "הפיל",  "english": "the elephant" },
+        { "hebrew": "אוֹכֵל",   "hebrewNoNikud": "אוכל",  "english": "eats" },
+        { "hebrew": "בָּנָנָה", "hebrewNoNikud": "בננה",  "english": "banana" }
+      ],
+      "translation": "The elephant eats banana",
+      "emoji": "🐘🍌"
+    },
+    {
+      "id": "horse-runs-fast",
+      "words": [
+        { "hebrew": "הַסּוּס",  "hebrewNoNikud": "הסוס",  "english": "the horse" },
+        { "hebrew": "רָץ",     "hebrewNoNikud": "רץ",    "english": "runs" },
+        { "hebrew": "מַהֵר",   "hebrewNoNikud": "מהר",   "english": "fast" }
+      ],
+      "translation": "The horse runs fast",
+      "emoji": "🐴💨"
+    },
+    {
+      "id": "monkey-loves-banana",
+      "words": [
+        { "hebrew": "הַקּוֹף",  "hebrewNoNikud": "הקוף",  "english": "the monkey" },
+        { "hebrew": "אוֹהֵב",  "hebrewNoNikud": "אוהב",  "english": "loves" },
+        { "hebrew": "בָּנָנָה", "hebrewNoNikud": "בננה",  "english": "banana" }
+      ],
+      "translation": "The monkey loves banana",
+      "emoji": "🐒🍌"
+    },
+    {
+      "id": "fish-swims-fast",
+      "words": [
+        { "hebrew": "הַדָּג",   "hebrewNoNikud": "הדג",   "english": "the fish" },
+        { "hebrew": "שׁוֹחֶה",  "hebrewNoNikud": "שוחה",  "english": "swims" },
+        { "hebrew": "מַהֵר",   "hebrewNoNikud": "מהר",   "english": "fast" }
+      ],
+      "translation": "The fish swims fast",
+      "emoji": "🐟💨"
+    },
+    {
+      "id": "rabbit-jumps-high",
+      "words": [
+        { "hebrew": "הָאַרְנָב",  "hebrewNoNikud": "הארנב",  "english": "the rabbit" },
+        { "hebrew": "קָפַץ",     "hebrewNoNikud": "קפץ",    "english": "jumped" },
+        { "hebrew": "גָּבוֹהַּ", "hebrewNoNikud": "גבוה",   "english": "high" }
+      ],
+      "translation": "The rabbit jumped high",
+      "emoji": "🐰⬆️"
+    },
+    {
+      "id": "bird-sings-beautifully",
+      "words": [
+        { "hebrew": "הַצִּפּוֹר", "hebrewNoNikud": "הציפור", "english": "the bird" },
+        { "hebrew": "שָׁרָה",    "hebrewNoNikud": "שרה",    "english": "sings" },
+        { "hebrew": "יָפֶה",     "hebrewNoNikud": "יפה",    "english": "beautifully" }
+      ],
+      "translation": "The bird sings beautifully",
+      "emoji": "🐦🎵"
+    },
+    {
+      "id": "boy-drinks-water",
+      "words": [
+        { "hebrew": "הַיֶּלֶד",  "hebrewNoNikud": "הילד",  "english": "the boy" },
+        { "hebrew": "שׁוֹתֶה",   "hebrewNoNikud": "שותה",  "english": "drinks" },
+        { "hebrew": "מַיִם",     "hebrewNoNikud": "מים",   "english": "water" }
+      ],
+      "translation": "The boy drinks water",
+      "emoji": "👦💧"
+    },
+    {
+      "id": "girl-loves-flowers",
+      "words": [
+        { "hebrew": "הַיַּלְדָּה",  "hebrewNoNikud": "הילדה",   "english": "the girl" },
+        { "hebrew": "אוֹהֶבֶת",    "hebrewNoNikud": "אוהבת",   "english": "loves" },
+        { "hebrew": "פְּרָחִים",   "hebrewNoNikud": "פרחים",   "english": "flowers" }
+      ],
+      "translation": "The girl loves flowers",
+      "emoji": "👧🌸"
+    },
+    {
+      "id": "butterfly-flies-high",
+      "words": [
+        { "hebrew": "הַפַּרְפָּר",  "hebrewNoNikud": "הפרפר",  "english": "the butterfly" },
+        { "hebrew": "עָף",         "hebrewNoNikud": "עף",     "english": "flies" },
+        { "hebrew": "גָּבוֹהַּ",   "hebrewNoNikud": "גבוה",   "english": "high" }
+      ],
+      "translation": "The butterfly flies high",
+      "emoji": "🦋✨"
+    },
+    {
+      "id": "cow-drinks-milk",
+      "words": [
+        { "hebrew": "הַפָּרָה",  "hebrewNoNikud": "הפרה",  "english": "the cow" },
+        { "hebrew": "שׁוֹתָה",  "hebrewNoNikud": "שותה",  "english": "drinks" },
+        { "hebrew": "חָלָב",   "hebrewNoNikud": "חלב",   "english": "milk" }
+      ],
+      "translation": "The cow drinks milk",
+      "emoji": "🐄🥛"
+    }
+  ]
+}

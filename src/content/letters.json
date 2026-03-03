@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "letters": [
+    { "letter": "א", "name": "Alef",   "transliteration": "" },
+    { "letter": "ב", "name": "Bet",    "transliteration": "b/v" },
+    { "letter": "ג", "name": "Gimel",  "transliteration": "g" },
+    { "letter": "ד", "name": "Dalet",  "transliteration": "d" },
+    { "letter": "ה", "name": "He",     "transliteration": "h" },
+    { "letter": "ו", "name": "Vav",    "transliteration": "v" },
+    { "letter": "ז", "name": "Zayin",  "transliteration": "z" },
+    { "letter": "ח", "name": "Khet",   "transliteration": "kh" },
+    { "letter": "ט", "name": "Tet",    "transliteration": "t" },
+    { "letter": "י", "name": "Yod",    "transliteration": "y" },
+    { "letter": "כ", "name": "Kaf",    "transliteration": "k/kh" },
+    { "letter": "ל", "name": "Lamed",  "transliteration": "l" },
+    { "letter": "מ", "name": "Mem",    "transliteration": "m" },
+    { "letter": "נ", "name": "Nun",    "transliteration": "n" },
+    { "letter": "ס", "name": "Samekh", "transliteration": "s" },
+    { "letter": "ע", "name": "Ayin",   "transliteration": "" },
+    { "letter": "פ", "name": "Pe",     "transliteration": "p/f" },
+    { "letter": "צ", "name": "Tzadi",  "transliteration": "tz" },
+    { "letter": "ק", "name": "Qof",    "transliteration": "k" },
+    { "letter": "ר", "name": "Resh",   "transliteration": "r" },
+    { "letter": "ש", "name": "Shin",   "transliteration": "sh/s" },
+    { "letter": "ת", "name": "Tav",    "transliteration": "t" }
+  ]
+}

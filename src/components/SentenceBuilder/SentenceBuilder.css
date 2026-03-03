@@ -1,0 +1,139 @@
+.sentence-builder {
+  gap: 16px;
+}
+
+/* ── Instruction + translation ──────────────────────────────── */
+.sentence-instruction-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.sentence-translation {
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ── Question wrapper ────────────────────────────────────────── */
+.sentence-question {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+/* ── Slot row: slots + scene emoji side-by-side (RTL) ────────── */
+.sentence-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.sentence-slots {
+  display: flex;
+  flex-direction: row;     /* LTR within RTL container → leftmost slot = word[2] */
+  gap: 8px;
+  flex: 1;
+}
+
+.sentence-slot {
+  flex: 1;
+  min-height: 72px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #CCC;
+  background: #FAFAFA;
+  transition: border-color var(--transition), background var(--transition);
+  padding: 6px 4px;
+}
+
+.sentence-slot.filled {
+  border: 3px solid var(--color-primary);
+  background: #EDE7FF;
+}
+
+.sentence-slot.slot-correct {
+  border-color: var(--color-correct);
+  background: #E8F5E9;
+  animation: flash-correct 0.5s ease forwards;
+}
+
+.sentence-slot.slot-wrong {
+  border-color: var(--color-secondary);
+  background: #FFE4E4;
+  animation: flash-wrong 0.5s ease forwards;
+}
+
+.slot-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Hebrew word in slots */
+.sentence-word-he {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.slot-en {
+  font-size: 0.68rem;
+  color: #888;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Scene emoji at end of sentence */
+.sentence-scene {
+  font-size: 2.8rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* ── Shuffled word tiles ─────────────────────────────────────── */
+.sentence-tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.sentence-tile {
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 14px;
+  min-width: 80px;
+  min-height: 64px;
+}
+
+.sentence-tile.used {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.tile-en {
+  font-size: 0.68rem;
+  color: #888;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ── Clear button ────────────────────────────────────────────── */
+.clear-btn {
+  align-self: center;
+  padding: 10px 24px;
+  font-size: 1rem;
+}
