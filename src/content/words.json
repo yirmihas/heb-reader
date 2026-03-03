@@ -158,6 +158,66 @@
       "funFact": "Snakes have no eyelids — they sleep with their eyes wide open!"
     },
     {
+      "id": "bear",
+      "hebrew": "דֹּב",
+      "hebrewNoNikud": "דב",
+      "transliteration": "dov",
+      "english": "bear",
+      "emoji": "🐻",
+      "imageFile": null,
+      "category": "animals",
+      "level": 1,
+      "funFact": "Bears can smell food from up to 30 kilometers away — their sense of smell is 7 times better than a dog's!"
+    },
+    {
+      "id": "fox",
+      "hebrew": "שׁוּעָל",
+      "hebrewNoNikud": "שועל",
+      "transliteration": "shual",
+      "english": "fox",
+      "emoji": "🦊",
+      "imageFile": null,
+      "category": "animals",
+      "level": 1,
+      "funFact": "Foxes use Earth's magnetic field like a compass to help them hunt — they can sense exactly where to pounce!"
+    },
+    {
+      "id": "frog",
+      "hebrew": "צְפַרְדֵּעַ",
+      "hebrewNoNikud": "צפרדע",
+      "transliteration": "tzfardeya",
+      "english": "frog",
+      "emoji": "🐸",
+      "imageFile": null,
+      "category": "animals",
+      "level": 1,
+      "funFact": "Frogs drink water through their skin — they never need to take a sip from a puddle!"
+    },
+    {
+      "id": "bee",
+      "hebrew": "דְּבוֹרָה",
+      "hebrewNoNikud": "דבורה",
+      "transliteration": "dvora",
+      "english": "bee",
+      "emoji": "🐝",
+      "imageFile": null,
+      "category": "animals",
+      "level": 1,
+      "funFact": "A single honeybee visits up to 2,000 flowers a day and dances to tell friends where the best ones are!"
+    },
+    {
+      "id": "duck",
+      "hebrew": "בַּרְוָז",
+      "hebrewNoNikud": "ברווז",
+      "transliteration": "barvaz",
+      "english": "duck",
+      "emoji": "🦆",
+      "imageFile": null,
+      "category": "animals",
+      "level": 1,
+      "funFact": "Ducklings memorize the first moving thing they see after hatching and follow it everywhere — this is called imprinting!"
+    },
+    {
       "id": "apple",
       "hebrew": "תַּפּוּחַ",
       "hebrewNoNikud": "תפוח",
@@ -300,6 +360,66 @@
       "category": "food",
       "level": 1,
       "funFact": "Humans have been growing grapes and making wine for over 8,000 years!"
+    },
+    {
+      "id": "chocolate",
+      "hebrew": "שׁוֹקוֹלָד",
+      "hebrewNoNikud": "שוקולד",
+      "transliteration": "shokolad",
+      "english": "chocolate",
+      "emoji": "🍫",
+      "imageFile": null,
+      "category": "food",
+      "level": 1,
+      "funFact": "It takes about 400 cocoa beans to make just 450 grams of chocolate!"
+    },
+    {
+      "id": "ice-cream",
+      "hebrew": "גְּלִידָה",
+      "hebrewNoNikud": "גלידה",
+      "transliteration": "glida",
+      "english": "ice cream",
+      "emoji": "🍦",
+      "imageFile": null,
+      "category": "food",
+      "level": 1,
+      "funFact": "Ice cream was invented in China over 1,000 years ago — they mixed snow with fruit and honey!"
+    },
+    {
+      "id": "soup",
+      "hebrew": "מָרָק",
+      "hebrewNoNikud": "מרק",
+      "transliteration": "marak",
+      "english": "soup",
+      "emoji": "🍲",
+      "imageFile": null,
+      "category": "food",
+      "level": 1,
+      "funFact": "The oldest known recipe in the world is for beer soup, recorded on a clay tablet 4,000 years ago!"
+    },
+    {
+      "id": "tomato",
+      "hebrew": "עַגְבָנִיָּה",
+      "hebrewNoNikud": "עגבניה",
+      "transliteration": "agvaniya",
+      "english": "tomato",
+      "emoji": "🍅",
+      "imageFile": null,
+      "category": "food",
+      "level": 1,
+      "funFact": "Tomatoes are actually fruit, not vegetables — they grow from a flower and contain seeds inside!"
+    },
+    {
+      "id": "honey",
+      "hebrew": "דְּבַשׁ",
+      "hebrewNoNikud": "דבש",
+      "transliteration": "dvash",
+      "english": "honey",
+      "emoji": "🍯",
+      "imageFile": null,
+      "category": "food",
+      "level": 1,
+      "funFact": "Honey never spoils — edible honey was found in Egyptian tombs over 3,000 years old!"
     },
     {
       "id": "israel",
@@ -782,6 +902,66 @@
       "funFact": "Sand is made from tiny pieces of rock broken down over millions of years by wind and water!"
     },
     {
+      "id": "wind",
+      "hebrew": "רוּחַ",
+      "hebrewNoNikud": "רוח",
+      "transliteration": "ruakh",
+      "english": "wind",
+      "emoji": "💨",
+      "imageFile": null,
+      "category": "nature",
+      "level": 1,
+      "funFact": "Wind is simply air moving from one place to another — and the fastest wind ever recorded was 407 km/h!"
+    },
+    {
+      "id": "snow",
+      "hebrew": "שֶׁלֶג",
+      "hebrewNoNikud": "שלג",
+      "transliteration": "sheleg",
+      "english": "snow",
+      "emoji": "❄️",
+      "imageFile": null,
+      "category": "nature",
+      "level": 1,
+      "funFact": "Every single snowflake has a unique shape — no two are exactly the same!"
+    },
+    {
+      "id": "rainbow",
+      "hebrew": "קֶשֶׁת",
+      "hebrewNoNikud": "קשת",
+      "transliteration": "keshet",
+      "english": "rainbow",
+      "emoji": "🌈",
+      "imageFile": null,
+      "category": "nature",
+      "level": 1,
+      "funFact": "A rainbow is actually a full circle — you only see the top half because the ground is in the way!"
+    },
+    {
+      "id": "river",
+      "hebrew": "נָהָר",
+      "hebrewNoNikud": "נהר",
+      "transliteration": "nahar",
+      "english": "river",
+      "emoji": "🏞️",
+      "imageFile": null,
+      "category": "nature",
+      "level": 1,
+      "funFact": "The Nile is the longest river in the world, stretching over 6,650 km through Africa!"
+    },
+    {
+      "id": "desert",
+      "hebrew": "מִדְבָּר",
+      "hebrewNoNikud": "מדבר",
+      "transliteration": "midbar",
+      "english": "desert",
+      "emoji": "🏜️",
+      "imageFile": null,
+      "category": "nature",
+      "level": 1,
+      "funFact": "Antarctica is actually the world's largest desert — a desert just means very little rain, not necessarily heat!"
+    },
+    {
       "id": "house",
       "hebrew": "בַּיִת",
       "hebrewNoNikud": "בית",
@@ -900,6 +1080,66 @@
       "category": "things",
       "level": 1,
       "funFact": "Humans spend about a third of their entire lives sleeping — that's around 25 years for an average person!"
+    },
+    {
+      "id": "clock",
+      "hebrew": "שָׁעוֹן",
+      "hebrewNoNikud": "שעון",
+      "transliteration": "shaon",
+      "english": "clock",
+      "emoji": "⏰",
+      "imageFile": null,
+      "category": "things",
+      "level": 1,
+      "funFact": "Before clocks were invented, people told time by watching the sun's shadow move across the ground!"
+    },
+    {
+      "id": "hat",
+      "hebrew": "כּוֹבַע",
+      "hebrewNoNikud": "כובע",
+      "transliteration": "kova",
+      "english": "hat",
+      "emoji": "🎩",
+      "imageFile": null,
+      "category": "things",
+      "level": 1,
+      "funFact": "Humans have been wearing hats for at least 5,300 years — a stone-age mummy was found wearing one!"
+    },
+    {
+      "id": "key",
+      "hebrew": "מַפְתֵּחַ",
+      "hebrewNoNikud": "מפתח",
+      "transliteration": "mafteakh",
+      "english": "key",
+      "emoji": "🔑",
+      "imageFile": null,
+      "category": "things",
+      "level": 1,
+      "funFact": "The first keys were made of wood in ancient Egypt — they were huge, sometimes the size of your arm!"
+    },
+    {
+      "id": "pencil",
+      "hebrew": "עִפָּרוֹן",
+      "hebrewNoNikud": "עפרון",
+      "transliteration": "iparon",
+      "english": "pencil",
+      "emoji": "✏️",
+      "imageFile": null,
+      "category": "things",
+      "level": 1,
+      "funFact": "One pencil can draw a line 56 km long or write about 45,000 words before it runs out!"
+    },
+    {
+      "id": "shoe",
+      "hebrew": "נַעַל",
+      "hebrewNoNikud": "נעל",
+      "transliteration": "naal",
+      "english": "shoe",
+      "emoji": "👟",
+      "imageFile": null,
+      "category": "things",
+      "level": 1,
+      "funFact": "The world's oldest known shoe is 5,500 years old — found in a cave in Armenia, made of cow leather!"
     }
   ]
 }

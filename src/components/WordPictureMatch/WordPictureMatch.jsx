@@ -23,7 +23,7 @@ export default function WordPictureMatch({ gameConfig, onAnswer, onGameEnd }) {
     return all.filter(w => w.category === gameConfig.category)
   }, [gameConfig.category])
 
-  const { currentWord, questionIndex, total, feedback, submitAnswer } =
+  const { currentWord, questionIndex, total, feedback, submitAnswer, goBack, canGoBack } =
     useGameState(words, onAnswer, onGameEnd)
 
   const choices = useMemo(
@@ -39,7 +39,10 @@ export default function WordPictureMatch({ gameConfig, onAnswer, onGameEnd }) {
       <FeedbackOverlay type={feedback} visible={feedback !== null} />
 
       <div className="game-header">
-        <span className="question-counter">{questionIndex + 1} / {total}</span>
+        <div className="game-header-row">
+          <button className="btn btn-secondary prev-btn" onClick={goBack} disabled={!canGoBack}>← Prev</button>
+          <span className="question-counter">{questionIndex + 1} / {total}</span>
+        </div>
         <ProgressBar current={questionIndex + 1} total={total} />
       </div>
 

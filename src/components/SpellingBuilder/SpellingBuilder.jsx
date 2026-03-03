@@ -95,7 +95,7 @@ export default function SpellingBuilder({ gameConfig, onAnswer, onGameEnd }) {
     return all.filter(w => w.category === gameConfig.category)
   }, [gameConfig.category])
 
-  const { currentWord, questionIndex, total, feedback, submitAnswer } =
+  const { currentWord, questionIndex, total, feedback, submitAnswer, retryKey, goBack, canGoBack } =
     useGameState(words, onAnswer, onGameEnd)
 
   if (!currentWord) return null
@@ -105,7 +105,10 @@ export default function SpellingBuilder({ gameConfig, onAnswer, onGameEnd }) {
       <FeedbackOverlay type={feedback} visible={feedback !== null} />
 
       <div className="game-header">
-        <span className="question-counter">{questionIndex + 1} / {total}</span>
+        <div className="game-header-row">
+          <button className="btn btn-secondary prev-btn" onClick={goBack} disabled={!canGoBack}>← Prev</button>
+          <span className="question-counter">{questionIndex + 1} / {total}</span>
+        </div>
         <ProgressBar current={questionIndex + 1} total={total} />
       </div>
 
@@ -114,7 +117,7 @@ export default function SpellingBuilder({ gameConfig, onAnswer, onGameEnd }) {
       <p className="game-instruction">Spell the Hebrew word</p>
 
       <SpellingQuestion
-        key={currentWord.id}
+        key={`${currentWord.id}-${retryKey}`}
         word={currentWord}
         onSubmit={submitAnswer}
       />

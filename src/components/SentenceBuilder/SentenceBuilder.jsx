@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useRef } from 'react'
 import sentencesData from '../../content/sentences.json'
 import { shuffle } from '../../utils/shuffle.js'
 import FeedbackOverlay from '../shared/FeedbackOverlay.jsx'
@@ -104,11 +104,13 @@ function SentenceQuestion({ sentence, feedback, onCheck }) {
 
 // ── Main game component ───────────────────────────────────────────────
 export default function SentenceBuilder({ onAnswer, onGameEnd }) {
-  const [shuffled]  = useState(() => shuffle(sentencesData.sentences).slice(0, ROUND_SIZE))
-  const [index,     setIndex]    = useState(0)
-  const [correct,   setCorrect]  = useState(0)
-  const [feedback,  setFeedback] = useState(null)   // null | 'correct' | 'wrong'
-  const [attemptKey, setAttemptKey] = useState(0)   // bumped on retry to remount child
+  const [shuffled]   = useState(() => shuffle(sentencesData.sentences).slice(0, ROUND_SIZE))
+  const [index,      setIndex]     = useState(0)
+  const [feedback,   setFeedback]  = useState(null)  // null | 'correct' | 'wrong'
+  const [attemptKey, setAttemptKey] = useState(0)    // bumped on retry to remount child
+
+  // Track first-attempt result per index — never re-score revisited questions
+  const firstAnswers = useRef({})
 
   const total   = shuffled.length
   const current = shuffled[index]
@@ -116,17 +118,21 @@ export default function SentenceBuilder({ onAnswer, onGameEnd }) {
   function handleCheck(isCorrect) {
     if (feedback !== null) return
     setFeedback(isCorrect ? 'correct' : 'wrong')
-    onAnswer(isCorrect)
+
+    const isFirstAttempt = !(index in firstAnswers.current)
+    if (isFirstAttempt) {
+      firstAnswers.current[index] = isCorrect
+      onAnswer(isCorrect)
+    }
 
     if (isCorrect) {
-      const newCorrect = correct + 1
-      setCorrect(newCorrect)
       setTimeout(() => {
         setFeedback(null)
         setAttemptKey(0)
         const next = index + 1
         if (next >= total) {
-          onGameEnd({ correct: newCorrect, total })
+          const correct = Object.values(firstAnswers.current).filter(Boolean).length
+          onGameEnd({ correct, total })
         } else {
           setIndex(next)
         }
@@ -140,6 +146,15 @@ export default function SentenceBuilder({ onAnswer, onGameEnd }) {
     }
   }
 
+  function goBack() {
+    if (index > 0 && feedback === null) {
+      setAttemptKey(0)
+      setIndex(i => i - 1)
+    }
+  }
+
+  const canGoBack = index > 0
+
   if (!current) return null
 
   return (
@@ -147,7 +162,10 @@ export default function SentenceBuilder({ onAnswer, onGameEnd }) {
       <FeedbackOverlay type={feedback} visible={feedback !== null} />
 
       <div className="game-header">
-        <span className="question-counter">{index + 1} / {total}</span>
+        <div className="game-header-row">
+          <button className="btn btn-secondary prev-btn" onClick={goBack} disabled={!canGoBack}>← Prev</button>
+          <span className="question-counter">{index + 1} / {total}</span>
+        </div>
         <ProgressBar current={index + 1} total={total} />
       </div>
 

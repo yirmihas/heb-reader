@@ -8,11 +8,28 @@
   gap: 8px;
 }
 
+.game-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prev-btn {
+  font-size: 0.82rem;
+  padding: 6px 12px;
+  min-height: 34px;
+  border-radius: 10px;
+}
+
+.prev-btn:disabled {
+  opacity: 0.22;
+  pointer-events: none;
+}
+
 .question-counter {
   font-size: 0.9rem;
   font-weight: 700;
   color: #999;
-  text-align: right;
 }
 
 .game-instruction {
