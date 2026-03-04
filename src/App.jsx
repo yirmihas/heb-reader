@@ -64,6 +64,7 @@ export default function App() {
           gameConfig={gameConfig}
           onAnswer={handleAnswer}
           onGameEnd={handleGameEnd}
+          onMenu={handleBackToMenu}
         />
       )}
       {view === 'spelling' && (
@@ -71,6 +72,7 @@ export default function App() {
           gameConfig={gameConfig}
           onAnswer={handleAnswer}
           onGameEnd={handleGameEnd}
+          onMenu={handleBackToMenu}
         />
       )}
       {view === 'missing-letter' && (
@@ -78,12 +80,14 @@ export default function App() {
           gameConfig={gameConfig}
           onAnswer={handleAnswer}
           onGameEnd={handleGameEnd}
+          onMenu={handleBackToMenu}
         />
       )}
       {view === 'sentence' && (
         <SentenceBuilder
           onAnswer={handleAnswer}
           onGameEnd={handleGameEnd}
+          onMenu={handleBackToMenu}
         />
       )}
       {view === 'score' && (

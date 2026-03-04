@@ -103,7 +103,7 @@ function SentenceQuestion({ sentence, feedback, onCheck }) {
 }
 
 // ── Main game component ───────────────────────────────────────────────
-export default function SentenceBuilder({ onAnswer, onGameEnd }) {
+export default function SentenceBuilder({ onAnswer, onGameEnd, onMenu }) {
   const [shuffled]   = useState(() => shuffle(sentencesData.sentences).slice(0, ROUND_SIZE))
   const [index,      setIndex]     = useState(0)
   const [feedback,   setFeedback]  = useState(null)  // null | 'correct' | 'wrong'
@@ -165,6 +165,7 @@ export default function SentenceBuilder({ onAnswer, onGameEnd }) {
         <div className="game-header-row">
           <button className="btn btn-secondary prev-btn" onClick={goBack} disabled={!canGoBack}>← Prev</button>
           <span className="question-counter">{index + 1} / {total}</span>
+          <button className="btn btn-secondary menu-btn" onClick={onMenu}>☰ Menu</button>
         </div>
         <ProgressBar current={index + 1} total={total} />
       </div>

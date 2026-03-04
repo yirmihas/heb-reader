@@ -88,7 +88,7 @@ function SpellingQuestion({ word, onSubmit }) {
   )
 }
 
-export default function SpellingBuilder({ gameConfig, onAnswer, onGameEnd }) {
+export default function SpellingBuilder({ gameConfig, onAnswer, onGameEnd, onMenu }) {
   const words = useMemo(() => {
     const all = wordsData.words
     if (!gameConfig.category || gameConfig.category === 'all') return all
@@ -108,6 +108,7 @@ export default function SpellingBuilder({ gameConfig, onAnswer, onGameEnd }) {
         <div className="game-header-row">
           <button className="btn btn-secondary prev-btn" onClick={goBack} disabled={!canGoBack}>← Prev</button>
           <span className="question-counter">{questionIndex + 1} / {total}</span>
+          <button className="btn btn-secondary menu-btn" onClick={onMenu}>☰ Menu</button>
         </div>
         <ProgressBar current={questionIndex + 1} total={total} />
       </div>
