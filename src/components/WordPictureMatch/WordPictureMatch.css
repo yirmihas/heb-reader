@@ -23,8 +23,7 @@
 }
 
 .prev-btn:disabled {
-  opacity: 0.22;
-  pointer-events: none;
+  visibility: hidden;
 }
 
 .question-counter {
