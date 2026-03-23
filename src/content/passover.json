@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "haggadah-swing",
+      "sentence": "פַּעַם הַהַגָּדָה הִתְנַדְנְדָה בְּנַדְנֵדָה",
+      "translation": "Once the Haggadah swung on a swing",
+      "imageFile": "/images/passover/haggadah-swing.jpg"
+    },
+    {
+      "id": "matza-egg",
+      "sentence": "פַּעַם מַצָּה הִטִּילָה בֵּיצָה",
+      "translation": "Once a matza laid an egg",
+      "imageFile": "/images/passover/matza-egg.jpg"
+    },
+    {
+      "id": "karpas-hopscotch",
+      "sentence": "פַּעַם כַּרְפַּס שִׂיחֵק בְּקְלַאס",
+      "translation": "Once karpas played hopscotch",
+      "imageFile": "/images/passover/karpas-hopscotch.jpg"
+    },
+    {
+      "id": "nuts-beads",
+      "sentence": "פַּעַם אֱגוֹזִים הִשְׁחִילוּ חֲרוּזִים",
+      "translation": "Once walnuts threaded beads",
+      "imageFile": "/images/passover/nuts-beads.jpg"
+    },
+    {
+      "id": "bowl-cave",
+      "sentence": "פַּעַם קְעָרָה יָשְׁבָה בִּמְעָרָה",
+      "translation": "Once a bowl sat in a cave",
+      "imageFile": "/images/passover/bowl-cave.jpg"
+    },
+    {
+      "id": "maror-bird",
+      "sentence": "פַּעַם מָרוֹר לִיטֵּף דְּרוֹר",
+      "translation": "Once maror caressed a sparrow",
+      "imageFile": "/images/passover/maror-bird.jpg"
+    },
+    {
+      "id": "afikoman-ear",
+      "sentence": "פַּעַם אֲפִיקוֹמָן אָכַל אֹזֶן הָמָן",
+      "translation": "Once the afikoman ate a haman's ear",
+      "imageFile": "/images/passover/afikoman-ear.jpg"
+    },
+    {
+      "id": "leviva-ark",
+      "sentence": "פַּעַם לְבִיבָה שָׁטָה בְּתֵבָה",
+      "translation": "Once a latke floated in an ark",
+      "imageFile": "/images/passover/leviva-ark.jpg"
+    },
+    {
+      "id": "cup-sky",
+      "sentence": "פַּעַם גָּבִיעַ טָס בָּרָקִיעַ",
+      "translation": "Once a goblet flew through the sky",
+      "imageFile": "/images/passover/cup-sky.jpg"
+    },
+    {
+      "id": "chametz-tree",
+      "sentence": "פַּעַם חָמֵץ נָטַע עֵץ",
+      "translation": "Once chametz planted a tree",
+      "imageFile": "/images/passover/chametz-tree.jpg"
+    },
+    {
+      "id": "chazeret-hit",
+      "sentence": "פַּעַם חֲזֶרֶת קִיבְּלָה מַכָּה בְּזֶרֶת",
+      "translation": "Once chazeret got hit by a pinky",
+      "imageFile": "/images/passover/chazeret-hit.jpg"
+    },
+    {
+      "id": "wine-eye",
+      "sentence": "פַּעַם יַיִן פָּקַח עַיִן",
+      "translation": "Once wine opened an eye",
+      "imageFile": "/images/passover/wine-eye.jpg"
+    },
+    {
+      "id": "shankbone-moto",
+      "sentence": "פַּעַם זְרוֹעַ רָכַב עַל אוֹפַנּוֹעַ",
+      "translation": "Once the shankbone rode a motorcycle",
+      "imageFile": "/images/passover/shankbone-moto.jpg"
+    },
+    {
+      "id": "egg-wheelbarrow",
+      "sentence": "פַּעַם בֵּיצָה הֵרִיצָה מְרִיצָה",
+      "translation": "Once an egg pushed a wheelbarrow",
+      "imageFile": "/images/passover/egg-wheelbarrow.jpg"
+    },
+    {
+      "id": "pyramid-icecream",
+      "sentence": "פַּעַם פִּירָמִידָה אָכְלָה גְּלִידָה",
+      "translation": "Once a pyramid ate ice cream",
+      "imageFile": "/images/passover/pyramid-icecream.jpg"
+    }
+  ]
+}

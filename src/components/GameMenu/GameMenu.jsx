@@ -43,6 +43,14 @@ const GAMES = [
     description: 'Put the words in the right order',
     difficulty: '⭐⭐⭐⭐',
   },
+  {
+    id: 'passover',
+    emoji: '🍷',
+    title: 'Passover Sillies',
+    titleHe: 'שטוזים לפסח',
+    description: 'Match the funny Passover sentence to its picture',
+    difficulty: '⭐⭐',
+  },
 ]
 
 export default function GameMenu({ onSelectGame, onBack, gameConfig, onConfigChange }) {

@@ -6,6 +6,7 @@ import WordPictureMatch from './components/WordPictureMatch/WordPictureMatch.jsx
 import SpellingBuilder from './components/SpellingBuilder/SpellingBuilder.jsx'
 import MissingLetter from './components/MissingLetter/MissingLetter.jsx'
 import SentenceBuilder from './components/SentenceBuilder/SentenceBuilder.jsx'
+import PassoverMatch from './components/PassoverMatch/PassoverMatch.jsx'
 import ScoreBoard from './components/ScoreBoard/ScoreBoard.jsx'
 
 // USER SYSTEM STUB: replace with useUser() hook
@@ -85,6 +86,13 @@ export default function App() {
       )}
       {view === 'sentence' && (
         <SentenceBuilder
+          onAnswer={handleAnswer}
+          onGameEnd={handleGameEnd}
+          onMenu={handleBackToMenu}
+        />
+      )}
+      {view === 'passover' && (
+        <PassoverMatch
           onAnswer={handleAnswer}
           onGameEnd={handleGameEnd}
           onMenu={handleBackToMenu}

@@ -1,0 +1,75 @@
+.passover-match {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.passover-sentence-block {
+  background: #f0fce8;
+  border: 2px solid #7bc949;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+}
+
+.passover-sentence {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #3a7d1c;
+  margin: 6px 0 4px;
+  direction: rtl;
+}
+
+.passover-translation {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  font-style: italic;
+}
+
+.passover-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.passover-choice {
+  padding: 4px;
+  border-radius: 14px;
+  overflow: hidden;
+  width: 100%;
+  height: 140px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  background: white;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.passover-choice:hover:not(:disabled) {
+  transform: scale(1.02);
+  border-color: var(--color-primary);
+}
+
+.passover-choice:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.passover-choice-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.passover-choice.correct {
+  border-color: var(--color-correct);
+  animation: flash-correct 0.5s ease;
+}
+
+.passover-choice.wrong {
+  border-color: var(--color-secondary);
+  animation: flash-wrong 0.5s ease;
+}
